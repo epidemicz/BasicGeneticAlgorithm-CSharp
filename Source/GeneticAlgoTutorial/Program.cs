@@ -148,13 +148,8 @@ namespace GeneticAlgoTutorial
         {
             get 
             {
-                return GetRandomFloat(_random);
+                return (float)_random.NextDouble();
             }
-        }
-
-        static float GetRandomFloat(Random random)
-        {
-            return (float)random.NextDouble();
         }
 
         // returns a string of random 1s and 0s of the desired length
